@@ -5,7 +5,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Football</title>
+    <title>Chakra Turf</title>
+		  <link rel="icon" type="img" href="img/favicon-32x32.png"> <!-- This is the favicon -->
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/global.css" rel="stylesheet">
 	<link href="css/contact.css" rel="stylesheet">
@@ -16,120 +17,34 @@
   </head>
   
 <body>
-<section id="header">
+
+	<section id="header">
 	<nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
 		   <div class="col-sm-12">
-		    <div class="navbar-header page-scroll">
+		    <div class="navbar-header page-scroll ">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html"><i class="fa fa-trophy"></i> FOO<span>T</span>BALL</a>
-            </div>
+<a class="navbar-brand d-flex align-items-center" href="index.html">
+  <img src="img/logo.jpg" alt="Chakra Turf Logo" class="logo-img me-2">
+  <span>Chakra Turf</span>
+</a>
+
+			</div>
 
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a class="tag_menu" href="index.html">HOME</a>
-                    </li>
-                     
-					<li>
-                        <a class="tag_menu" href="about.html">ABOUT US</a>
-                    </li>
-					 
-				    <li>
-                        <a class="tag_menu" href="blog.html">BLOG</a>
-                    </li>
-					
-					<li>
-                        <a class="tag_menu" href="blog_detail.html">DETAIL</a>
-                    </li>
-					
-					
-					<li>
-                        <a class="tag_menu" href="team.html">TEAM</a>
-                    </li>
-					
-					<li>
-                        <a class="tag_menu  active_tab" href="contact.html">CONTACT</a>
-                    </li>
-					<li class="dropdown"><a class="tag_menu" href="#" data-toggle="dropdown"><span class="fa fa-search"></span></a>
-							<ul class="dropdown-menu drop_2" style="min-width: 300px;">
-								<li>
-									<div class="row_1">
-										<div class="col-sm-12">
-											<form class="navbar-form navbar-left" role="search">
-											<div class="input-group">
-												<input type="text" class="form-control" placeholder="Search">
-												<span class="input-group-btn">
-													<button class="btn btn-primary" type="button">
-														Search</button>
-												</span>
-											</div>
-											</form>
-										</div>
-									</div>
-								</li>
-							</ul>
-						</li>
-					<li class="dropdown">
-					  <a class="tag_menu" href="#" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-shopping-cart"></i></a>
-					  <ul class="dropdown-menu drop_1" role="menu">
-						<li>No products in the cart.</li>
-					  </ul>
-                    </li>
-					
-					<li class="dropdown">
-					  <a class="tag_menu" href="#" data-toggle="dropdown" role="button" aria-expanded="false">MORE<span class="caret"></span></a>
-					  <ul class="dropdown-menu drop_1" role="menu">
-						<li><a href="index.html">Home</a></li>
-						<li><a href="about.html">About Us</a></li>
-						<li><a href="team.html">Team</a></li>
-						<li><a href="contact.html">Contact</a></li>
-					  </ul>
-                    </li>
-					
-					
-					
-                </ul>
-				<section id="side_box">
-				
-				  <a id="menu-toggle" href="#" class="btn btn-primary btn-lg toggle"><i class="fa fa-list"></i></a>
-					<div id="sidebar-wrapper" class="">
-					  <ul class="sidebar-nav">
-						<a id="menu-close" href="#" class="btn btn-default btn-lg pull-right toggle"><i class="glyphicon glyphicon-remove"></i></a>
-						<li class="sidebar-brand">
-						  <a href="index.html">FOOTBALL</a>						</li>
-					  </ul>
-					  <div class="wrap_inner clearfix text-center">
-					   <img  src="img/5.jpg" alt="abc" class="iw">
-					   <p class="para_1"> Lorem ipsum dolor sit amet,  adipiscing elit integer nec odio.</p>
-					   <div class="top_right clearfix">
-								<p>
-								 <a href="#"><i class="fa fa-pinterest"></i></a>
-								 <a href="#"><i class="fa fa-linkedin"></i></a>
-								 <a href="#"><i class="fa fa-dribbble"></i></a>
-								 <a href="#"><i class="fa fa-facebook"></i></a>
-								 <a href="#"><i class="fa fa-twitter"></i></a>
-								</p>
-	                   </div>
-					   
-					  </div>
-					  <div class="wrap_inner_2 clearfix">
-					    <h3>Contact Us</h3>
-						<input class="form-control" placeholder="Name" type="text">
-						<input class="form-control" placeholder="Email" type="text">
-						<input class="form-control" placeholder="Phone" type="text">
-						<textarea class="form-control form_1" placeholder="Type Text Here"></textarea>
-						<h5 class="text-center"><a class="button" href="#">Subscribe <i class="fa fa-chevron-right"></i></a></h5>
-					  </div>
-					  
-					</div>
-		
-	          </section>
+<ul class="nav navbar-nav navbar-right menu"> <!-- ← added 'menu' -->
+  <li><a class="tag_menu" href="index.html">HOME</a></li>
+  <li><a class="tag_menu" href="index.html">ABOUT US</a></li>
+  <li><a class="tag_menu" href="">BOOKING</a></li>
+  <li><a class="tag_menu" href="">GALLERY</a></li>
+  <li><a class="tag_menu active_tab" href="contact.html">CONTACT</a></li>
+</ul>
+
             </div>
 		   </div>
         </div>
@@ -145,7 +60,9 @@
     <div class="col-sm-12">
 	 <h1 class="mgt col">Contact Us</h1>
 	 <hr>
-	 <p class="col">Lorem ipsum dolor sit amet, cu his aliquam honestatis, mel ut putant verear consectetuer. Eu sed<br> diam ignota, dictas repudiare vix ne.</p>
+	 <p class="col">On the turf, we chase more than a ball —
+We chase dreams, discipline, and glory.
+<br>Every blade of grass knows our story.</p>
 	</div>
    </div>
   </div>
@@ -159,23 +76,14 @@
    <div class="contact_ab_1 clearfix">
     <div class="col-sm-6">
 	 <div class="contact_ab_1r clearfix">
-	   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114964.53925916665!2d-80.29949920266738!3d25.782390733064336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b0a20ec8c111%3A0xff96f271ddad4f65!2sMiami%2C+FL%2C+USA!5e0!3m2!1sen!2sin!4v1530774403788" width="100%" height="300px" frameborder="0" style="border:0" allowfullscreen=""></iframe>
-	 </div>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3935.8688914337763!2d77.5784108!3d9.4328968!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b06c30008543725%3A0xd55eae72a674e190!2sChakra%20Turf%20Rajapalayam!5e0!3m2!1sen!2sin!4v1750225516845!5m2!1sen!2sin" width="100%" height="300px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>	 </div>
 	</div>
     <div class="col-sm-6">
 	 <div class="contact_ab_1l clearfix">
 	  <h2 class="mgt">Contact Us</h2>
-	  <p>Lorem ipsum dolor sit amet, cu his aliquam honestatis, mel ut putant verear consec tetuer. Eu sed diam ignota, dictas repudi vix ne id augue salutatus eos.</p>
-	  <div class="contact_ab_1li clearfix">
-	   <div class="col-sm-4 space_left">
-	    <h5><i class="fa fa-headphones col_1"></i> 1-234-56xyz</h5>
-	   </div>
-	   <div class="col-sm-4 space_left">
-	    <h5><i class="fa fa-envelope col_1"></i> info@gmail.com</h5>
-	   </div>
-	   <div class="col-sm-4 space_left">
-	    <h5><i class="fa fa-map-marker col_1"></i> England</h5>
-	   </div>
+	  <p>
+Chakra Turf is a sports facility in Rajapalayam, located at Vishnu Nagar, Kalangaperi Road.
+It offers a well-maintained turf for cricket and football matches.</p><br>
 	  </div>
 	  <div class="contact_ab_1li clearfix">
 	   <div class="col-sm-4 space_left">
@@ -185,7 +93,7 @@
 	    <h5><i class="fa fa-envelope col_1"></i> info@gmail.com</h5>
 	   </div>
 	   <div class="col-sm-4 space_left">
-	    <h5><i class="fa fa-map-marker col_1"></i> Australia</h5>
+	    <h5><i class="fa fa-map-marker col_1"></i>Rajapalayam</h5>
 	   </div>
 	  </div>
 	 </div>
@@ -211,7 +119,7 @@
 		   <input class="form-control" placeholder="Email" type="text">
 		  </div>
 		  <div class="col-sm-4 space_left">
-		   <input class="form-control" placeholder="website" type="text">
+		   <input class="form-control" placeholder="Phone No" type="tel">
 		  </div>
 	   </div>
 	    <div class="blod_d1l4i clearfix">
@@ -250,10 +158,10 @@
 	<div class="col-sm-3">
 	 <div class="footer_1_i1 clearfix">
 	  <h4 class="col bold mgt">Links</h4>
-      <h5><a href="#"><i class="fa fa-chevron-right"></i> About Us</a></h5>
-	  <h5><a href="#"><i class="fa fa-chevron-right"></i> Club History</a></h5>
-	  <h5><a href="#"><i class="fa fa-chevron-right"></i> Contact Us</a></h5>
-	  <h5><a href="#"><i class="fa fa-chevron-right"></i> FAQ</a></h5>
+     <h5><a href="index.html"><i class="fa fa-chevron-right"></i> About Us</a></h5>
+	  <h5><a href="#"><i class="fa fa-chevron-right"></i> Booking</a></h5>
+	  	  <h5><a href="#"><i class="fa fa-chevron-right"></i>Gallery</a></h5>
+	  <h5><a href="contact.html"><i class="fa fa-chevron-right"></i> Contact Us</a></h5>
 	 </div>
 	</div>
 	
@@ -266,14 +174,14 @@
                         <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
                         <li><a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
                         <li><a href="#" class="icoGoogle" title="Google +"><i class="fa fa-google-plus"></i></a></li>
-                        <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="#" class="icoLinkedin" title="Instagram"><i class="fa fa-instagram"></i></a></li>
        </ul>
 	 </div>
 	</div>
    </div>
    <div class="footer_2 text-center clearfix">
     <div class="col-sm-12">
-	  <p class="mgt col"> © 2013 Your Website Name. All Rights Reserved | Design by <a class="col_1" href="http://www.templateonweb.com">TemplateOnWeb</a></p>
+	  <p class="mgt col"> &copy; 2025 Chakra Turf. All Rights Reserved | Design by </p>
 	</div>
    </div>
   </div>

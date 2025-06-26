@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chakra Turf - Gallery</title>
+  <link rel="icon" href="img/favicon-32x32.png" type="image/png">
+
+  <!-- Bootstrap CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/global.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Viga&display=swap" rel="stylesheet">
+
+  <!-- Lightbox2 -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet">
+  
+  <style>
+  
+    
+/* General Reset */
+
+
+
+
+
+
+/* Gallery Container */
+#gallery-items {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -10px;
+}
+
+/* Gallery Item */
+.gallery-item {
+  padding: 10px;
+  width: 33.333%; /* 3 columns on desktop */
+  box-sizing: border-box;
+}
+
+.gallery-item a {
+  display: block;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.gallery-item img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item a:hover img {
+  transform: scale(1.05);
+}
+
+/* Lightbox Image Customization */
+.lb-image {
+  max-width: 90vw !important;  /* Allow wider display on screen */
+  max-height: 90vh !important;
+  width: auto !important;
+  height: auto !important;
+  display: block;
+  margin: 0 auto;              /* Center horizontally */
+  object-fit: contain;         /* Maintain aspect ratio */
+  border-radius: 6px;
+}
+/* Responsive Breakpoints */
+@media (max-width: 992px) {
+  .gallery-item {
+    width: 50%; /* 2 columns on tablets */
+  }
+}
+
+@media (max-width: 576px) {
+  .gallery-item {
+    width: 100%; /* 1 column on mobile */
+  }
+}
+
+/* Optional Animation */
+.gallery-item {
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+</style>
+</head>
+<body>
+
+<!-- Header -->
+<section id="header">
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="col-sm-12">
+        <div class="navbar-header page-scroll">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand d-flex align-items-center" href="index.html">
+            <img src="img/logo.jpg" alt="Chakra Turf Logo" class="logo-img me-2">
+            <span>Chakra Turf</span>
+          </a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right menu">
+            <li><a class="tag_menu" href="index.html">HOME</a></li>
+            <li><a class="tag_menu" href="index.html">ABOUT US</a></li>
+            <li><a class="tag_menu" href="booking.html">BOOKING</a></li>
+            <li><a class="tag_menu active_tab" href="gallery.html">GALLERY</a></li>
+            <li><a class="tag_menu" href="index.html">CONTACT</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+</section>
+
+
+<!-- Filterable Gallery Section -->
+<div class="container py-5">
+  <h1 class="text-center mb-4" style="margin-top: 150px;">Our Gallery</h1>
+
+
+<br>
+  <div class="row" id="gallery-items">
+    <!-- Photo Items -->
+    <div class="col-md-4 mb-4 gallery-item" data-category="photo">
+      <a href="img/gallery 1.jpg" data-lightbox="gallery" data-title="Turf">
+        <img src="img/gallery 1.jpg" class="img-fluid" alt="Turf">
+      </a>
+    </div>
+    <div class="col-md-4 mb-4 gallery-item" data-category="photo">
+      <a href="img/gallery 3.jpg" data-lightbox="gallery" data-title="Turf">
+        <img src="img/gallery 3.jpg" class="img-fluid" alt="Turf">
+      </a>
+    </div>
+    <div class="col-md-4 mb-4 gallery-item" data-category="photo">
+      <a href="img/gallery 4.jpg" data-lightbox="gallery" data-title="Turf">
+        <img src="img/gallery 4.jpg" class="img-fluid" alt="Turf">
+      </a>
+    </div>
+    <!-- More Photos -->
+    <div class="col-md-4 mb-4 gallery-item" data-category="photo">
+      <a href="img/gallery 2.jpg" data-lightbox="gallery" data-title="Turf">
+        <img src="img/gallery 2.jpg" class="img-fluid" alt="Turf">
+      </a>
+    </div>
+    <div class="col-md-4 mb-4 gallery-item" data-category="photo">
+      <a href="img/gallery 5.jpg" data-lightbox="gallery" data-title="Turf">
+        <img src="img/gallery 5.jpg" class="img-fluid" alt="Turf">
+      </a>
+    </div>
+<div class="col-md-4 mb-4 gallery-item" data-category="photo">
+      <a href="img/gallery 6.jpg" data-lightbox="gallery" data-title="Turf">
+        <img src="img/gallery 6.jpg" class="img-fluid" alt="Turf">
+      </a>
+    </div>
+    <div class="col-md-4 mb-4 gallery-item" data-category="photo">
+      <a href="img/gallery 7.jpg" data-lightbox="gallery" data-title="Turf">
+        <img src="img/gallery 7.jpg" class="img-fluid" alt="Turf">
+      </a>
+    </div>
+    <div class="col-md-4 mb-4 gallery-item" data-category="photo">
+      <a href="img/gallery 8.jpg" data-lightbox="gallery" data-title="Turf">
+        <img src="img/gallery 8.jpg" class="img-fluid" alt="Turf">
+      </a>
+    </div>
+    <div class="col-md-4 mb-4 gallery-item" data-category="photo">
+      <a href="img/gallery 9.jpg" data-lightbox="gallery" data-title="Turf">
+        <img src="img/gallery 9.jpg" class="img-fluid" alt="Turf">
+      </a>
+    </div>
+    <div class="col-md-4 mb-4 gallery-item" data-category="photo">
+      <a href="img/gallery.jpg" data-lightbox="gallery" data-title="Turf">
+        <img src="img/gallery.jpg" class="img-fluid" alt="Turf">
+      </a>
+    </div>
+    <div class="col-md-4 mb-4 gallery-item" data-category="photo">
+      <a href="img/gallery 11.jpg" data-lightbox="gallery" data-title="Turf">
+        <img src="img/gallery 11.jpg" class="img-fluid" alt="Turf">
+      </a>
+    </div>
+    <div class="col-md-4 mb-4 gallery-item" data-category="photo">
+      <a href="img/gallery 12.jpg" data-lightbox="gallery" data-title="Turf">
+        <img src="img/gallery 12.jpg" class="img-fluid" alt="Turf">
+      </a>
+    </div>
+  </div>
+</div>
+<br>
+<section id="footer">
+ <div class="container">
+  <div class="row">
+   <div class="footer_1 clearfix">
+    <div class="col-sm-3">
+	 <div class="footer_1_i clearfix">
+	  <h4 class="col bold mgt">About Turf</h4>
+	  <p>Enjoy seamless turf bookings at Chakra Turf, perfect for friendly matches, practice sessions, and night games.</p>
+<br>
+    <h5 class="col"><i class="fa fa-phone"></i>	Call Us: 7010771388/7010667140</h5>
+	 </div>
+	</div>
+	<div class="col-sm-3">
+	 <div class="footer_1_i clearfix">
+	  <h4 class="col bold mgt">Latest Posts</h4>
+	  <div class="footer_1_ii clearfix"><h5 class="col mgt"><a href="#">Cricket Tournament</a> <span>Jun 28, 2025</span></h5></div>
+	  <div class="footer_1_ii clearfix"><h5 class="col mgt"><a href="#">Football Tournament</a> <span>July 30, 2025</span></h5></div>
+	  <div class="footer_1_ii clearfix"><h5 class="col mgt"><a href="#">Handball Tournament</a> <span>Aug 30, 2025</span></h5></div>
+	 </div>
+	</div>
+	
+	<div class="col-sm-3">
+	 <div class="footer_1_i1 clearfix">
+	  <h4 class="col bold mgt">Links</h4>
+      <h5><a href="index.html"><i class="fa fa-chevron-right"></i> About Us</a></h5>
+	  <h5><a href="booking.html"><i class="fa fa-chevron-right"></i> Booking</a></h5>
+	  	  <h5><a href="gallery.html"><i class="fa fa-chevron-right"></i>Gallery</a></h5>
+	  <h5><a href="index.html"><i class="fa fa-chevron-right"></i> Contact Us</a></h5>
+	 </div>
+	</div>
+	
+	<div class="col-sm-3">
+	 <div class="footer_1_i2 clearfix">
+	  <h4 class="col bold mgt">Follow Us</h4>
+	  <p>Follow us on social media for updates, offers, and match highlights — stay connected with Chakra Turf and never miss a game! ⚽🏏📲</p>
+      <ul class="social-network social-circle">
+                        <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://g.co/kgs/KsdqyFT" class="icoGoogle" title="Google"><i class="fa fa-google"></i></a></li>
+                        <li><a href="https://www.instagram.com/___chakraturf25___/" class="icoLinkedin" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+       </ul>
+	 </div>
+	</div>
+   </div>
+   <div class="footer_2 text-center clearfix">
+    <div class="col-sm-12">
+	  <p class="mgt col"> &copy; 2025 Chakra Turf. All Rights Reserved | Design by </p>
+	</div>
+   </div>
+  </div>
+ </div>
+</section>
+
+
+<!-- JS Scripts -->
+<script src="js/jquery-2.1.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+
+<!-- Gallery Filter Script -->
+<script>
+  const filterButtons = document.querySelectorAll('.filter-btn');
+  const galleryItems = document.querySelectorAll('.gallery-item');
+
+  filterButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const filter = button.getAttribute('data-filter');
+
+      filterButtons.forEach(btn => btn.classList.remove('active'));
+      button.classList.add('active');
+
+      galleryItems.forEach(item => {
+        if (filter === 'all' || item.getAttribute('data-category') === filter) {
+          item.style.display = 'block';
+        } else {
+          item.style.display = 'none';
+        }
+      });
+    });
+  });
+</script>
+</body>
+</html>
