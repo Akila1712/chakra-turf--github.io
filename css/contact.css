@@ -8,7 +8,7 @@ Licence: <a href="http://www.templateonweb.com/terms.php?v=content&contentid=152
 /*********************contact****************/ 
 .center_contact{
  margin-top:53px;
- background-image: url(../img/56.jpg);
+ background-image: url(../img/turf.jpg);
  background-position:center;
  }
 
@@ -46,7 +46,7 @@ margin-top:20px;
 
 @media screen and (max-width : 767px){
 .center_contact{
- margin-top:0;
+ margin-top:10%;
  }
 .contact_ab_1l {
  margin-top:15px;
