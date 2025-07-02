@@ -125,19 +125,48 @@ display:block;
 /*********************achieve_end****************/
 
 /*********************gallery_home****************/
-#gallery_home{
-padding-top:40px;  
+/* Add spacing around the gallery section */
+#gallery {
+  padding: 60px 0;
+  background-color: #f9f9f9; /* Optional background color */
+}
+
+/* Space between gallery images */
+#gallery .row > div {
+  padding: 10px;
+}
+
+/* Make images fit and look neat */
+#gallery img {
+  width: 100%;
+  height: 250px; /* Or auto if you prefer natural height */
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+/* Add hover effect */
+#gallery img:hover {
+  transform: scale(1.03);
+}
+
+/* Center the "View All" button and space it */
+#gallery .btn {
+  margin-top: 30px;
+}
+#gallery hr{
+  border-width:5px;
+ border-color:#F4B400;
+ width:5%;
+ margin-bottom:0; 
+}
+@media (max-width: 576px) {
+  #gallery img {
+    height: 300px;
   }
-#gallery_home .container{
-padding:0;
-width:100%;  
-  }
-#gallery_home .row{
-margin:0;
-  }
-#gallery_home .achieve_1mi1{
- padding-top:30%;
- }
+}
+
 /*********************gallery_home_end****************/
 
 /*********************players****************/
@@ -151,6 +180,7 @@ padding-bottom:40px;
 #strategy{
  margin-top:-218px; 
  padding-bottom:30px;
+ 
   }
 .clickable
 {
@@ -159,6 +189,7 @@ padding-bottom:40px;
 .panel-title{
  font-size:22px;
  font-weight:bold; 
+ color: #eee;
   }
 .panel-title i{
 margin-right:5px;
@@ -186,12 +217,12 @@ a.clickable:hover { text-decoration:none; }
  
 .panel-success>.panel-heading{
  background: #1a4e89; 
- color:#000;
+ color: #eee;
  border-color:#1a4e89;
  padding:20px 30px;
   }
 .panel-collapsed{
-  background:#f4f4f4!important;
+ background: #1a4e89; 
   }
 .panel-body{
 padding-bottom:25px;  
