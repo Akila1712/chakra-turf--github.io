@@ -16,8 +16,13 @@
     <script src="js/bootstrap.min.js"></script>
     
   </head>
-  
+ 
 <body>
+<!-- Preloader -->
+<div id="preloader">
+  <img src="img/spinner.gif" alt="Loading..." class="preloader-img">
+</div>
+
 <section id="header">
 	<nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
@@ -633,6 +638,18 @@ It offers a well-maintained turf for cricket and football matches.</p>
   </div>
  </div>
 </section>
+<script>
+  window.addEventListener('load', function () {
+    setTimeout(function () {
+      var preloader = document.getElementById('preloader');
+      preloader.style.opacity = '0';
+      preloader.style.transition = 'opacity 0.5s ease';
+      setTimeout(function () {
+        preloader.style.display = 'none';
+      }, 500); // match fade duration
+    }, 2000); // 2 seconds delay
+  });
+</script>
 
 <script>
 	$(document).on('click', '.panel-heading span.clickable', function (e) {
