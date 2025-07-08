@@ -19,12 +19,7 @@
   height: auto;
 }
 
-@media (max-width: 768px) {
-  .preloader-img {
-    width: 50%;
-   height: auto;
-  }
-}
+
 
 body{
 font-family: 'Viga', sans-serif;
